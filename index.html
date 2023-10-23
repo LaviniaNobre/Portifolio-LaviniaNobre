@@ -94,17 +94,18 @@
 
     <section id="contato" class="contato">
       <h2>Contato</h2>
-      <form action="https://api.staticforms.xyz/submit" metahod="post">
-        <label>Nome</label>
-        <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="off">
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off">
-        <label>Mensagem</label>
-        <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-        <button type="submit">Enviar</button>
-        <!-- Essa chave foi gerada no staticforms para que todas as mensagens sejam enviadas para o meu email -->
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <!-- Replace with accesKey sent to your email -->
         <input type="hidden" name="accessKey" value="1f38295c-845f-49fe-93e1-0964e9c73d8f">
-      </form>
+        <label>Nome</label>
+        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off"> 
+        <label>Email</label>
+        <input type="text" name="email" placeholder="Digite seu email" autocomplete="off">
+        <label>Mensagem</label>
+        <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+        <!-- If you want replyTo to be set to specific email -->
+        <button>Enviar</button>
+    </form>
       <p>Deixe sua mensagem. Desde já, obrigada!</p>
     </section>
   </main> 
