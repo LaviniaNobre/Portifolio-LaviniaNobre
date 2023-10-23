@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 233, 213);
+  color: #000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: fixed;
+  background-color: #fec5cc;
+  width: 100vw;
+  padding: 18px 40px;
+  border: 2px solid #000;
+}
+
+nav > ul.lista-navegacao {
+  display: flex;
+  list-style-type: none;
+}
+
+ul.lista-navegacao > li {
+  margin-right: 40px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li > a:hover {
+  color: #f57a89;
+}
+
+section.inicio, section.formacao, section.projetos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.inicio > .box-inicio, section.formacao > .box-formacao {
+  width: 70%;
+  height: 73%;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.box-inicio > div.container-paragrafo {
+  padding: 40px;
+  width: 60%;
+}
+
+div.container-paragrafo  > h2 {
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+div.container-paragrafo  > hr {
+  border-color: #000;
+  margin: 40px 0;
+}
+
+span.nome {
+  color: #0575a1;
+}
+
+div.container-imagem {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+.box-inicio > div.container-imagem {
+  background-image: url(../imagens/imagem-3.jpeg);
+}
+
+section.formacao > .box-formacao {
+  margin-top: 0;
+}
+
+.box-formacao > div.container-imagem {
+  background-image: url(../imagens/imagem-1.jpeg);
+}
+
+.box-formacao > div.container-curricular {
+  display: grid;
+  grid-template-rows: repeat(3, 80px);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+h3.titulo {
+  background-color: #fec5cc;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 3px;
+  border: 2px solid #000;
+}
+
+p.status {
+  color: #0575a1;
+  font-size: 14px;
+}
+
+section.projetos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section.projetos > h2 {
+  margin: 60px 0px 30px 0px;
+  font-size: 30px;
+}
+
+section.projetos > div.box-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  gap: 22px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+div.info-projeto {
+  color: #fec5cc;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  height: 200px;
+}
+
+div.info-projeto > h2 {
+  padding: 10px;
+}
+
+div.info-projeto > a {
+  text-decoration: none;
+  width: 150px;
+  padding: 8px;
+  background-color: #fec5cc;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+/* O hover é acionado quando o mouse está sobre o elemento */
+div.info-projeto > a:hover {
+  background-color: #000;
+  color: #fec5cc;
+  border: 2px solid #fec5cc;
+  box-shadow: 0 0 10px #fec5cc4d;
+
+}
+
+div.projeto-1, div.projeto-2, div.projeto-3, div.projeto-4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+div.projeto-1 {
+  background-image: url(../imagens/project-summary.jpeg);
+}
+
+div.projeto-2 {
+  background-image: url(../imagens/project-advice.jpeg);
+}
+
+div.projeto-3 {
+  background-image: url(../imagens/project-cordel.jpeg);
+}
+
+div.projeto-4 {
+  background-image: url(../imagens/project-product.jpeg);
+}
+
+section.contato {
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.contato > h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+section.contato > form {
+  background-color: #fec5cc;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid #000;
+  margin-bottom: 10px;
+}
+
+form > label {
+  margin: 5px 0;
+}
+
+form > input, button, textarea {
+  padding: 10px;
+}
+
+form > input, textarea {
+  border: 1px solid #000;
+}
+
+form > textarea {
+  margin-bottom: 20px;
+}
+
+form > button {
+  background-color: #fcabb4;
+  border: 2px solid #000;
+}
+
+form > input:focus, textarea:focus {
+  border-radius: 16px;
+}
+
+/* media query é usado para que haja responsividade na página 
+A partir de 600px, todos esses estilos serão aplicados*/
+@media (max-width: 600px){
+  header {
+    justify-content: center;
+  }
+
+  /* a div ocupará 90 da view width e 80 da view height para preencher melhor as menores telas*/
+  section.inicio > .box-inicio {
+    width: 90vw; 
+    height: 80vh;
+    flex-direction: column;
+  }
+
+  .box-inicio > div.container-paragrafo {
+    width: 100%;
+  }
+
+  div.container-imagem {
+    width: 100%;
+    height: 100%;
+  }
+  
+  section.formacao > .box-formacao {
+    width: 90vw;
+    height: 80vh;
+    flex-direction: column-reverse;
+  }
+
+  .box-formacao > div.container-imagem {
+    margin-top: 80px;
+  }
+
+  section.projetos > div.box-projetos {
+    display: grid;
+    grid-template-columns: repeat(1, 90vw);
+    gap: 22px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  section.contato > form {
+    width: 80vw;
+  }
+}

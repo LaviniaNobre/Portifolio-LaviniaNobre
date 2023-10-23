@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio-Lavinianobre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="lista-navegacao">
+        <li>
+          <a href="#inicio">inicio</a>
+        </li>
+        <li>
+          <a href="#formacao">formação</a>
+        </li>
+        <li>
+          <a href="#projetos">projetos</a>
+        </li>
+        <li>
+          <a href="#contato">contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Cada section é como uma página única  -->
+    <section id="inicio" class="inicio">
+      <div class="box-inicio">
+        <div class="container-paragrafo">
+          <hr>
+          <h2>Sobre mim</h2>
+          <!-- Coloquei um span no meu nome para estilizá-lo individualmente -->
+          <p>Olá! Meu nome é <span class="nome">Lavínia Sousa Nobre</span>, tenho 19 anos e sou uma desenvolvedora em formação. Atualmente moro no Rio de Janeiro, mas meu sonho é viajar o mundo inteiro.</p>
+          <hr>
+        </div>
+        <div class="container-imagem">
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="formacao">
+      <div class="box-formacao">
+        <div class="container-imagem">
+        </div>
+        <div class="container-curricular">
+            <div class="educacao">
+              <h3 class="titulo">Colegial</h3>
+              <p>Colégio Estadual Olavo Bilac</p>
+              <p class="status">Completo</p>
+            </div>
+            <div class="graduacao">
+              <h3 class="titulo">Graduação</h3>
+              <p>Centro Universitário Internacional - UNINTER</p>
+              <p class="status">Em desenvolvimento</p>
+            </div>
+            <div class="adicional">
+              <h3 class="titulo">Informação Adicional</h3>
+              <p>Curso de inglês completo - UDEMY</p>
+              <p class="status">Em desenvolvimento</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2>Projetos</h2>
+      <div class="box-projetos">
+        <div class="info-projeto projeto-1">
+          <p>HTML/CSS</p>
+          <h2>Results Summary Component</h2>
+          <a href="https://lavinianobre.github.io/FrontendMentor-summary/" target="_blank">Conhecer Projeto</a>
+        </div>
+        <div class="info-projeto projeto-2">
+          <p>HTML/CSS</p>
+          <h2>Advice Generator App</h2>
+          <a href="https://lavinianobre.github.io/FrontendMentor-advice/" target="_blank">Conhecer Projeto</a>
+        </div>
+        <div class="info-projeto projeto-3">
+          <p>HTML/CSS</p>
+          <h2>Cordel Moderno</h2>
+          <a href="https://lavinianobre.github.io/CodelModerno/" target="_blank">Conhecer Projeto</a>
+        </div>
+        <div class="info-projeto projeto-4">
+          <p>HTML/CSS</p>
+          <h2>Product Preview Card Component</h2>
+          <a href="https://lavinianobre.github.io/FrontendMentor-card/" target="_blank">Conhecer Projeto</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <form action="https://api.staticforms.xyz/submit" metahod="post">
+        <label>Nome</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="off">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off">
+        <label>Mensagem</label>
+        <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+        <button type="submit">Enviar</button>
+        <!-- Essa chave foi gerada no staticforms para que todas as mensagens sejam enviadas para o meu email -->
+        <input type="hidden" name="accessKey" value="1f38295c-845f-49fe-93e1-0964e9c73d8f">
+      </form>
+      <p>Deixe sua mensagem. Desde já, obrigada!</p>
+    </section>
+  </main> 
+</body>
+</html>
