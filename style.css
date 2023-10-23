@@ -246,7 +246,7 @@ form > input:focus, textarea:focus {
 
 /* media query é usado para que haja responsividade na página 
 A partir de 600px, todos esses estilos serão aplicados*/
-@media (max-width: 800px){
+@media (max-width: 600px){
   header {
     justify-content: center;
   }
