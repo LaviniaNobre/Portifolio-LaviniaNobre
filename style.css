@@ -85,7 +85,7 @@ div.container-imagem {
 }
 
 .box-inicio > div.container-imagem {
-  background-image: url(../imagens/imagem-3.jpeg);
+  background-image: url(./imagens/imagem-3.jpeg);
 }
 
 section.formacao > .box-formacao {
@@ -93,7 +93,7 @@ section.formacao > .box-formacao {
 }
 
 .box-formacao > div.container-imagem {
-  background-image: url(../imagens/imagem-1.jpeg);
+  background-image: url(./imagens/imagem-1.jpeg);
 }
 
 .box-formacao > div.container-curricular {
@@ -180,19 +180,19 @@ div.projeto-1, div.projeto-2, div.projeto-3, div.projeto-4 {
 } 
 
 div.projeto-1 {
-  background-image: url(../imagens/project-summary.jpeg);
+  background-image: url(./imagens/project-summary.jpeg);
 }
 
 div.projeto-2 {
-  background-image: url(../imagens/project-advice.jpeg);
+  background-image: url(./imagens/project-advice.jpeg);
 }
 
 div.projeto-3 {
-  background-image: url(../imagens/project-cordel.jpeg);
+  background-image: url(./imagens/project-cordel.jpeg);
 }
 
 div.projeto-4 {
-  background-image: url(../imagens/project-product.jpeg);
+  background-image: url(./imagens/project-product.jpeg);
 }
 
 section.contato {
@@ -249,6 +249,10 @@ A partir de 600px, todos esses estilos serão aplicados*/
 @media (max-width: 600px){
   header {
     justify-content: center;
+  }
+
+  ul.lista-navegacao > li {
+    margin-right: 20px;
   }
 
   /* a div ocupará 90 da view width e 80 da view height para preencher melhor as menores telas*/
